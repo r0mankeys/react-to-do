@@ -1,0 +1,91 @@
+.task-box {
+  display: flex;
+  padding: 1.6875rem 2rem;
+  align-items: center;
+  gap: 1.5625rem;
+  border-radius: 1.25rem;
+  border: 1px solid var(--stroke--primary);
+  background: var(--task--bg);
+  inline-size: clamp(22rem, 44vw, 50rem);
+  color: var(--text--primary);
+}
+
+.task-box:hover {
+  box-shadow: var(--shadow--primary);
+}
+
+.task-text {
+  display: inline-block;
+  font-size: var(--step-1);
+  overflow-wrap: break-word;
+  overflow: hidden;
+  font-weight: 450;
+  cursor: pointer;
+  flex-grow: 1;
+}
+
+.icon-box {
+  display: flex;
+  padding: 0.625rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+  border-radius: 0.625rem;
+  border: 1px solid var(--stroke--primary);
+  background: var(--task--bg);
+  cursor: pointer;
+}
+
+.icon {
+  inline-size: 26px;
+  aspect-ratio: 1 / 1;
+  stroke: var(--text--primary);
+}
+
+.checkbox {
+  cursor: pointer;
+  display: flex;
+  inline-size: 2.5rem;
+  padding: 0.645rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+  border-radius: 0.21875rem;
+  border: 2px solid var(--text--primary);
+  background: var(--task--bg);
+}
+
+.checked {
+  border: 2px solid var(--background-primary, #9747ff);
+  background: var(--background-primary, #9747ff);
+}
+
+.checked + .task-text {
+  text-decoration: line-through;
+}
+
+.checked .checkmark {
+  stroke: white;
+}
+
+.checkmark {
+  stroke: var(--task--bg);
+  width: 30px;
+}
+
+.icon-box:hover:has(.edit-icon) {
+  border: 1px solid var(--edit--accent);
+}
+
+.icon-box:hover:has(.edit-icon) .edit-icon {
+  stroke: var(--edit--accent);
+}
+
+.icon-box:hover:has(.bin-icon) {
+  border: 1px solid var(--delete--accent);
+}
+
+.icon-box:hover:has(.bin-icon) .bin-icon {
+  stroke: var(--delete--accent);
+}
