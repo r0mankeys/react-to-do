@@ -14,4 +14,4 @@ I designed the layout myself in [figma](https://www.figma.com)
 
 You can see the design file [here](https://www.figma.com/file/oCFtqd8Merv9ylpKjXO4oq/Todo-List?type=design&node-id=0-1&mode=design&t=LDPaYyRuKEMgw8bX-0)
 
-You can see the website here [todo-app](https://r0keys-todo-app.vercel.app/);
+You can see the website here [todo-app](https://r0keys-todo-app.vercel.app/)
